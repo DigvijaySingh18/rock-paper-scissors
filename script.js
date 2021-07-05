@@ -40,7 +40,7 @@ function game(){
     let computerScore = 0;
     for (let i=0; i<5; i++){
         // Get user Input for playerSelection
-        let playerChoice = prompt("Enter your choice: Rock, Paper or Scissors");
+        let playerChoice = window.prompt("Enter your choice: Rock, Paper or Scissors");
         // Set computerSelection equal to computerPlay
         let computerChoice = computerPlay();
         roundOutcome = playRound(playerChoice, computerChoice);
@@ -54,11 +54,11 @@ function game(){
 
     // Display winner
     if (playerScore > computerScore){
-        console.log("You Win the Game");
+        console.log(`You Win the Game.\nFinal Score is Player ${playerScore} : ${computerScore} Computer.`);
     } else if (computerScore > playerScore){
-        console.log("You Lose the Game");
+        console.log(`You Lose the Game.\nFinal Score is Player ${playerScore} : ${computerScore} Computer.`);
     } else {
-        console.log("The Game ended as Tie.");
+        console.log(`The Game ended as Tie.\nFinal Score is Player ${playerScore} : ${computerScore} Computer.`);
     }
 }
 
