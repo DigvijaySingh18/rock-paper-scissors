@@ -50,6 +50,7 @@ function game(){
         } else if (roundOutcome.search("Lose") > 0){
             computerScore += 1;
         }
+        console.log(`Current Score is Player ${playerScore} : Computer ${computerScore}`);
     }
 
     // Display winner
