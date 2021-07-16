@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+    background-size: 100%;
+    display: grid; 
+    justify-content: center; 
+    /* align-items: center; */
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    
+}
+.btn {
+    height: 50px;
+    width: 90px;
+    margin-right: 2em;
+    background-color: black;
+    color: chartreuse;
+    border-color: chartreuse;
+}
+
+div {
+    color: chartreuse;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.container {
+    font-size: 60px;
+}

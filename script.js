@@ -16,18 +16,19 @@ function playRound(playerSelection, computerSelection){
     // Make playerSelection and computerSelection case insesitive
     playerSelection = playerSelection.toLowerCase();
     computerSelection = computerSelection.toLowerCase();
+
     // Evalute both parameters and store result
     let roundResult = "";
     if ((playerSelection == "rock" && computerSelection == "scissors") 
         || (playerSelection == "paper" && computerSelection == "rock")
         || (playerSelection == "scissors" && computerSelection == "paper")){
             playerScore += 1;
-            roundResult = `You Win, ${playerSelection} beats ${computerSelection}.`;
+            roundResult = `You Win, ${playerSelection.toUpperCase()} beats ${computerSelection.toUpperCase()}.`;
     } else if ((computerSelection == "rock" && playerSelection == "scissors")
         || (computerSelection == "paper" && playerSelection == "rock")
         || (computerSelection == "scissors" && playerSelection == "paper")){
             computerScore += 1;
-            roundResult = `You Lose! ${computerSelection} beats ${playerSelection}`;
+            roundResult = `You Lose! ${computerSelection.toUpperCase()} beats ${playerSelection.toUpperCase()}`;
     } else if (playerSelection == computerSelection){
         roundResult = "It's a Tie.";
     } else {
